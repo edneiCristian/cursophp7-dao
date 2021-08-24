@@ -34,15 +34,24 @@ require_once ("config.php");
 
 // echo $usuario;
 
-$aluno =new Usuario("aluno2","@lun02");
+
+//Criando um novo Usuario
+//$aluno =new Usuario("aluno2","@lun02");
 
 //$aluno->setDeslogin("aluno");
 //$aluno->setDessenha("@lun0");
+//$aluno->insert();
+//echo $aluno;
 
-$aluno->insert();
+//
 
-echo $aluno;
+$usuario = new Usuario();
 
+$usuario->loadByID(8);
+
+$usuario->update("professor", "fdsafdsa");
+
+echo $usuario;
 
 /*
 $sql = new Sql();
