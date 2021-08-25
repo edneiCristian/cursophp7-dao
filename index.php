@@ -43,15 +43,26 @@ require_once ("config.php");
 //$aluno->insert();
 //echo $aluno;
 
-//
+// Alterar um usuario
+
+//$usuario = new Usuario();
+
+//$usuario->loadByID(8);
+
+//$usuario->update("professor", "fdsafdsa");
+
+//echo $usuario;
+
+//Apagar um usuario
 
 $usuario = new Usuario();
 
-$usuario->loadByID(8);
+$usuario->loadById(7);
 
-$usuario->update("professor", "fdsafdsa");
+$usuario->delete();
 
 echo $usuario;
+
 
 /*
 $sql = new Sql();
